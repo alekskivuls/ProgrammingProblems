@@ -19,6 +19,13 @@ public class DataTypes {
 		scan.close();
 	}
 
+	/**
+	 * Determine the programming type based off a string representation
+	 * 
+	 * @param string
+	 *            The string representation to determine the type of
+	 * @return Referenced or primitive and the name of the type
+	 */
 	public static String determineType(String string) {
 		String result = "";
 		if (string.contains("\""))
