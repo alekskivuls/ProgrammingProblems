@@ -1,3 +1,3 @@
 # Programming Problems
 
-This is a repository to keep track of porgramming problems I solve for future reference.
+This is a repository to keep track of programming problems I solve for future reference.
