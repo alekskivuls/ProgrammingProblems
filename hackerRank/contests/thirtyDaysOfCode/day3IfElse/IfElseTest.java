@@ -13,9 +13,14 @@ public class IfElseTest {
 		assertFalse("Sample2", IfElse.isWeird(24));
 
 		assertTrue("Odd", IfElse.isWeird(3));
+
 		assertFalse("Even between 2 and 5 (inc)", IfElse.isWeird(2));
+		assertFalse("Even between 2 and 5 (inc)", IfElse.isWeird(4));
+
 		assertTrue("Even between 6 and 20 (inc)", IfElse.isWeird(6));
-		assertFalse("Even between and greater than 20", IfElse.isWeird(2));
+		assertTrue("Even between 6 and 20 (inc)", IfElse.isWeird(20));
+
+		assertFalse("Even greater than 20", IfElse.isWeird(22));
 	}
 
 }
