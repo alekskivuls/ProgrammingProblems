@@ -35,8 +35,6 @@ public class PersonTest {
 		assertEquals("Negative age", field.get(person), 0);
 
 		person = new Person(5);
-		assertEquals("This person is not valid, setting age to 0.",
-				outContent.toString().trim());
 		assertEquals("Negative age", field.get(person), 5);
 	}
 
