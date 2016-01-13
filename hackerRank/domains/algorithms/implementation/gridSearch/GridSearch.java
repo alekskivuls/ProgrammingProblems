@@ -71,6 +71,7 @@ public class GridSearch {
 					return true;
 			} else { // First line of pattern not found go to next line in text
 				i++;
+				offset = 0;
 			}
 		}
 		return false;
