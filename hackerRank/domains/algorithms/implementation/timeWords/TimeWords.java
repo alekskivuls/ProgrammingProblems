@@ -54,10 +54,12 @@ public class TimeWords {
 			timeString += " past ";
 		}
 
-		if (min == 0) {
+		if (min == 0)
 			timeString = map.get(hour) + " o' clock";
-		} else if (min == 1)
+		else if (min == 1)
 			timeString = map.get(min) + " minute" + timeString + map.get(hour);
+		else if (min == 15 || min == 30)
+			timeString = map.get(min) + timeString + map.get(hour);
 		else
 			timeString = map.get(min) + " minutes" + timeString + map.get(hour);
 
